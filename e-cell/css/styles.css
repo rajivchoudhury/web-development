@@ -1,0 +1,343 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #000000;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/**Header**/
+
+#header-nav{
+	background-color: #000000;
+	border-radius: 0;
+	border: 0;
+}
+
+.header-image {
+	float: left;
+}
+
+.navbar-heading {
+	padding-top: 25px;
+}
+
+.navbar-heading h1 {
+	font-family: 'Caveat', cursive;
+	color: #557c3e;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+	overflow: hidden;
+	float: left;
+	margin-left: 30px;
+}
+
+.navbar-heading a:hover {
+	text-decoration: none;
+	overflow: hidden;
+	width: auto;
+}
+
+/*End header*/
+/* Image Starts*/
+/* .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  background-color: #000;
+} */
+/* Position the image container (needed to position the left and right arrows) */
+ .container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  #caption {
+	  text-decoration: none;
+  }
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+/*Image Ends */
+/*Back to top button*/
+
+/*End of back to top button*/
+/*Contact Form*/
+.contact-form {
+	background-color: #000;
+	padding: 10px;
+}
+.contact-form input {
+	color: #000;
+}
+.contact-form #message {
+	width: auto;
+	overflow: scroll;
+}
+button {
+	color: #000;
+}
+/*End of Contact Form*/
+/*Footer*/
+.panel-footer {
+	background-color: rgb(129, 22, 22);
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+}
+#quote {
+	color: #f6b319;
+}
+
+#address {
+	color: #000;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+#hours. #address {
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p{
+	color: #557c3e;
+	font-size: 0.8em;
+	line-height: 1.8;
+}
+#testimonials {
+	font-style: italic;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+
+/*End Footer*/
+
+/* Home  Page */
+.container .jumbotron {
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
+/*End Home-page*/
+
+
+/***************Large Devices************************/
+@media (min-width: 1200px){
+	.container .jumbotron {
+		background: url('../images/jumbotron_1200.jpg') no-repeat;
+		height: 675px;
+	}
+
+}
+
+/****************Medium devices*************************/
+@media (min-width: 992px) and (max-width: 1199px){
+	#logo-img {
+		/*Header*/
+		background: url('../images/restaurant-logo_medium.png') no-repeat ;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+		/*End Header*/
+	}
+
+	/*Home-page*/
+	.container .jumbotron {
+		background: url('../images/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+	}
+
+	/*End Home-page*/
+}
+
+/****************Small devices***********************/
+@media (min-width: 768px) and (max-width: 991px){
+	/*Home-page*/
+	.container .jumbotron  {
+		background: url('../images/jumbotron_768.jpg') no-repeat;
+		height: 432px;
+	}
+	/*End Home-page*/
+}
+
+/***************Extra Small devices*******************/
+@media (max-width: 767px){
+	/*Header*/
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{/*Resturant Name*/
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% of viewport width*/
+	}
+	.navbar-brand p {/*Kosher cert.*/
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img { /*Star image*/
+		height: 20px;
+	}
+	#collapsable-nav a {/*Collapsed nav menu glymph*/
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span{
+		font-size: 1em;
+		margin-right: 5px;
+	}
+	#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+
+  #xs-deliver {
+  	margin-top: 5px;
+  	font-size: 0.7em;
+  	letter-spacing: .1em;
+  	text-transform: uppercase;
+  }
+  /*End header*/
+  /*Footer*/
+  .panel-footer section{
+  	margin-bottom: 30px;
+  	text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+  	margin-bottom: 0; /*margin already exists on the whole row*/
+  }
+  .panel-footer	section hr{
+  	width: 50% ;
+  }
+  /*End Footer*/
+
+  /*Main-content*/
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile, #map-tile {
+  	width: 360px;
+  	margin: 0 auto 15px; 
+  }
+  /*End main-content*/
+  /*Single-category*/
+  .menu-item-photo {
+  	margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+  	text-align: center;
+  }
+  .menu-item-description {
+  	text-align: center;
+  }
+  /*End of Single-category*/
+}
+
+/***********For super extra small devices only*******************/
+@media (max-width: 479px) {
+	/*header*/
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	/*end header*/
+	/*home page*/
+	#menu-tile, #specials-tile, #map-tile {
+  	width: 280px;
+  	margin: 0 auto 15px; 
+  }	
+  .col-xxs-12{
+  	position: relative;
+  	min-height: 1px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	float: left;
+    width: 100%;
+  }
+}
